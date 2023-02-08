@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap');
+
 .App {
   text-align: center;
 }
@@ -32,72 +34,61 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
 }
 
-thead, tr:nth-child(2n) {
-  background-color: #f3f3f3;
-}
-
-.header {
-  display: flex;
-  width: 50%;
-  justify-content: space-between;
-  padding: 10px;
-}
-
-input {
-  margin: 0;
-    font-family: inherit;
-    font-size: inherit;
-    line-height: inherit;
-    padding: 5px;
-    border-radius: 5px;
-    outline: 0;
-    font-weight: 400;
-    font-size: 16px;
-    min-width: 250px;
-    border-radius: 4px;
-    border: 1px solid #979797;
-    padding: 15px;
-    height: 40px;
-}
-
 .header-container {
   display: flex;
   align-items: center;
+  margin-bottom: 24px;
 }
 
 .header-image-container {
   display: flex;
-  width: 45px;
-  height: 45px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   background: #FEE4E2;
-  margin-right: 15px;
+  margin-right: 16px;
 }
 
 .header-image {
-  width: 30px;
+  width: 18px;
+  height: 18px;
   margin: auto;
 }
 
 .react-responsive-modal-closeButton {
-  top: 36px;
-  top: 50px;
-  right: 30px;
+  top: 26px;
+  right: 26px;
+}
+
+.react-responsive-modal-closeButton svg {
+  fill: rgba(8, 15, 54, 0.5);
+  height: 20px;
+  width: 20px;
 }
 
 .react-responsive-modal-modal {
-  max-width: 500px !important;
-  padding: 30px;
+  max-width: 452px !important;
+  padding: 24px;
+  background: #FFFFFF;
+  box-shadow: 0px 24px 48px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
 }
 
 .body-para {
-  margin-left: 59px;
-  margin-bottom: 30px;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 400;
+  margin-left: 56px;
+  margin-bottom: 24px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #070F2C;
 }
 
 .button-container {
@@ -108,17 +99,37 @@ input {
 .back-button {
   background: #ffffff;
   margin-right: 8px;
-  padding: 10px 15px;
-  border-radius: 10px;
-  border: 1px solid #cecfd6;
+  padding: 8px 16px;
+  gap: 8px;
+  width: 68px;
+  height: 40px;
+  border: 1px solid rgba(8, 15, 54, 0.32);
+  border-radius: 8px;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #344054;
+  justify-content: center;
+  display: flex;
 }
 
 .skip-button {
-  background: #f04439;
-  color: #ffffff;
-  padding: 10px 15px;
-  border-radius: 10px;
-  border: 1px solid #cecfd6;
+  display: flex;
+  align-items: center;
+  padding: 8px 16px;
+  gap: 8px;
+  width: 192px;
+  height: 40px;
+  background: #F04438;
+  border-radius: 8px;
+  border: none;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
 }
 
 button {
@@ -137,4 +148,14 @@ button {
 .main-container {
   padding: 30px;
   text-align: center;
+}
+
+.header {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #070F2C;
+  margin: auto 0;
 }

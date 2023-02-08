@@ -14,7 +14,7 @@ const App = () => {
   return (
     <div className='main-container'>
       <button className='button-home' onClick={onOpenModal}>Click Me</button>
-      <Popup open={open} onCloseModal={onCloseModal} onConfirm={onConfirm}/>
+      {open && <Popup open={open} onCloseModal={onCloseModal} onConfirm={onConfirm}/>}
     </div>
   );
 };

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Modal } from 'react-responsive-modal';
-import WarningImage from './images/icons8-warning-67.png';
+import WarningImage from './images/icon.png';
 
 const Popup = ({ open, onCloseModal, onConfirm }) => {
     return (
@@ -9,7 +9,7 @@ const Popup = ({ open, onCloseModal, onConfirm }) => {
             <div className='header-image-container'>
               <img className='header-image' src={WarningImage} alt='warning' />
             </div>
-          <h2>Unclosed Overdue Pay Runs</h2>
+          <p className='header'>Unclosed Overdue Pay Runs</p>
           </div>
           <p className='body-para'>
            Would you like to skip unclosed periods and start with this pay run <strong>(January 2023)?</strong>
